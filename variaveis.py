@@ -73,9 +73,10 @@ def calcular_dias_de_vida(data):
     if data is None:
         error = 'ops'
         return error
-    hoje = datetime.date.today
+    hoje = datetime.date.today()
     dias_de_vida = hoje - data
     return dias_de_vida
 
-calcular_dias_de_vida(dias_de_nasc)
+retorno = calcular_dias_de_vida(dias_de_nasc)
+print(retorno)
 
